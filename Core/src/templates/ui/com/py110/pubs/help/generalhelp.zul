@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window  border="normal" closable="true" sizable="false" width="460px" height="400px" apply="com.zysoft.pubs.help.generalHelpComposer">
+        <!--   <listbox id="lbhelp" vflex="1">
+            <listhead sizable="true">
+                <listheader id="lhbh" label="编号" align="center" />
+                <listheader id="lhmc" label="名称" align="center" />
+                <listheader id="lhjs" label="级数" align="center" />
+                <listheader id="lhmx" label="明细" align="center" />
+            </listhead>
+        </listbox>-->
+        <hbox width="440px" align="start">
+            <!--<checkbox id="cbauto" checked="true" label="快速查找：" tooltiptext="如果选用，输入查找内容后自动过滤，否则需要按 查找 按钮"/>-->
+            <label width="80px" value="快速查找:" />
+            <textbox id="tbsearch" hflex="1"/>
+            <toolbarbutton id="tbbsearch" label="查找" image="images/icons/find.png"/>
+        </hbox>
+        <tree id="treeMenu"  vflex="true" width="440px" >
+            <treecols sizable="true"  >
+                <treecol label="编号" align="left" />
+                <treecol label="名称" align="center" width="80px"/>
+                <treecol label="级数" align="center"/>
+                <treecol label="明细" align="center" />
+            </treecols>
+            <!--<treefoot>-->
+                <!--<treefooter label="共有数据：" />-->
+                <!--<treefooter id="tfcnt" label="" />-->
+            <!--</treefoot>-->
+            <!--<treechildren />-->
+        </tree>
+        <paging id="pagingBar" mold="os" pageSize="40" detailed="true"/>
+
+        <toolbar id="tbbar" mold="panel" align="center" >
+            <toolbarbutton id="tbbok" label="确定" tooltiptext="确定"  image="images/icons/accept.png" />
+            <toolbarbutton id="tbbcancel" label="取消" tooltiptext="取消"  image="images/icons/cancel.png" />
+        </toolbar>
+        <!--<paging id="pagingBar" pageSize="40" />-->
+
+
+    </window>
+
+</zk>

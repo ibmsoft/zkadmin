@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window  border="normal" closable="true" width="300px" height="300px" use="com.pansoft.pubs.help.generalHelpwindow">
+        <toolbar>
+            <toolbarbutton id="tbbok" label="确定" tooltiptext="确定"  image="images/icons/accept.png" />
+            <toolbarbutton id="tbbcancel" label="取消" tooltiptext="取消"  image="images/icons/cancel.png" />
+        </toolbar>
+        <listbox id="lbhelp" vflex="1" hflex="1">
+            <listhead sizable="true">
+                <listheader id="lhbh" label="编号" align="center" />
+                <listheader id="lhmc" label="名称" align="center" />
+                <listheader id="lhjs" label="级数" align="center" />
+                <listheader id="lhmx" label="明细" align="center" />
+            </listhead>
+        </listbox>
+    </window>
+
+</zk>

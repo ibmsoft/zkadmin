@@ -1,0 +1,20 @@
+<plugin name='quartz-monitor' version='0.1' grailsVersion='1.1 &gt; *'>
+  <author>James Cook</author>
+  <authorEmail>grails@jamescookie.com</authorEmail>
+  <title>Monitor your Quartz jobs</title>
+  <description>\
+One clear and concise page that enables you to administer all your Quartz jobs.
+</description>
+  <documentation>http://grails.org/plugin/quartz-monitor</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>org.grails.plugins.quartz.QuartzController</resource>
+  </resources>
+  <dependencies>
+    <plugin name='quartz' version='0.4.2' />
+  </dependencies>
+  <behavior />
+</plugin>

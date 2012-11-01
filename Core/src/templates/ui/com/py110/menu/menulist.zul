@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<!--<zk xmlns="http://www.zkoss.org/2005/zul"-->
+    <!--xmlns:h="http://www.w3.org/1999/xhtml"-->
+    <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+    <!--xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">-->
+
+    <window width="100%" height="100%" apply="com.py110.menu.pymenuComposer">
+
+        <toolbar id="menutoolbar">
+            <toolbarbutton id="zymenureload" label="刷新" image="/images/icons/application.png" />
+            <toolbarbutton id="zymenuaddt" label="增加同级" image="/images/icons/add.png"/>
+            <toolbarbutton id="zymenuaddx" label="增加下级" image="/images/icons/chart_organisation_add.png"/>
+            <toolbarbutton id="zymenudel" label="删除" image="/images/icons/delete.png"/>
+            <toolbarbutton id="zymenusave" label="保存" image="/images/icons/bullet_disk.png"/>
+        </toolbar>
+        <tree id="treeMenu" vflex="1" zclass="z-dottree" hflex="1">
+            <treecols sizable="true" >
+                <treecol label="编号" align="left" />
+                <treecol label="类型" align="center" width="80px"/>
+                <treecol label="名称" align="center"/>
+                <treecol label="图标" align="center" />
+                <treecol label="链接" align="center"/>
+            </treecols>
+            <treechildren />
+        </tree>
+        <!--<window id="crudzymenu" visible="false" width="80%" vflex="1" border="normal" title="字典维护" closable="true" onClose="self.visible = false; event.stopPropagation();" >
+            <toolbar>
+            <toolbarbutton id="zymenudel" label="删除" image="/images/icons/delete.png"/>
+            <toolbarbutton id="zymenusave" label="保存" image="/images/icons/bullet_disk.png"/>
+            <toolbarbutton id="zymenuclose" label="关闭" image="/images/icons/cancel.png"/>
+            </toolbar>
+            <grid width="99%">
+                <rows>
+                    <row id="data" >
+                        <label value="编号："  />
+                        <textbox id="fbh"   constraint="no empty" />
+                    </row>
+                    <row>
+                        <label value="类型：" />
+                        <textbox id="stype"  constraint="no empty" />
+                    </row>
+                    <row>
+                        <label value="名称：" />
+                        <textbox id="sdesc"  constraint="no empty" />
+                    </row>
+                </rows>
+            </grid>
+        </window>-->
+    </window>
+
+
+<!--</zk>-->

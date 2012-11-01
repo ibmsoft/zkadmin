@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window width="100%" height="100%" apply="com.py110.basic.jobComposer">
+        <toolbar id="toolbarPane">
+            <toolbarbutton id="tbbfresh" label="刷新" image="/images/icons/application.png"  />
+            <!--<toolbarbutton id="tbbstop" label="停止" image="/images/icons/stop.png"/>-->
+            <!--<toolbarbutton id="tbbpause" label="暂停" image="/images/icons/pause.png"/>-->
+            <!--<toolbarbutton id="tbbrun" label="执行" image="/images/icons/run.png"/>-->
+            <!--<toolbarbutton id="tbbuser" label="用户密码" image="/images/icons/user.png"/>-->
+        </toolbar>
+
+        <listbox id = "listboxPane" vflex="1" hflex="1">
+            <listhead sizable="true">
+                <listheader label="任务名" align="center"  hflex="1"/>
+                <listheader label="上次运行时间" align="center"  hflex="1"/>
+                <listheader label="耗时" align="center"  hflex="1" />
+                <listheader label="下次执行时间" align="center" hflex="1"/>
+                <listheader label="动作" align="center"  hflex="1"/>
+            </listhead>
+        </listbox>
+
+    </window>
+
+</zk>

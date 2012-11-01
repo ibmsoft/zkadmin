@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window width="100%" height="100%" apply="com.py110.basic.pyconfComposer">
+        <toolbar id="toolbarPane">
+            <toolbarbutton id="tbbfresh" label="刷新" image="/images/icons/application.png" />
+            <toolbarbutton id="tbbimport" label="导入" image="/images/icons/chart_organisation_add.png"/>
+            <toolbarbutton id="tbbadd" label="增加" image="/images/icons/add.png"/>
+            <toolbarbutton id="tbbdel" label="删除" image="/images/icons/delete.png"/>
+            <toolbarbutton id="tbbsave" label="保存" image="/images/icons/bullet_disk.png"/>
+            <!--<toolbarbutton id="tbbuser" label="用户密码" image="/images/icons/user.png"/>-->
+        </toolbar>
+
+        <listbox id = "listboxPane" vflex="1" hflex="1">
+            <listhead sizable="true">
+                <listheader label="行号" width="60px" align="center"  />
+                <listheader label="参数Key" align="center"  />
+                <listheader label="参数值" align="center"  />
+                <listheader label="备注" align="center" />
+            </listhead>
+        </listbox>
+
+    </window>
+
+</zk>

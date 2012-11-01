@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window  title="组合条件查询"  border="normal" closable="true" width="460px" height="480px" apply="com.pansoft.pubs.help.tjHelpComposer">
+        <hlayout >
+            <vlayout hflex="1" vflex="1" >
+                <listbox hflex="1" vflex="1" id="lbcols">
+                    <listhead>
+                        <listheader label="选择比较项目" />
+                    </listhead>
+                </listbox>
+            </vlayout>
+
+            <vlayout hflex="2" vflex="1">
+                <groupbox closable="false" mold="3d" >
+                    <caption label="条件比较符" />
+                    <toolbar>
+                        <button  label=" =" tooltiptext="等于" id="bxd"/>
+                        <button  label=" &gt;" tooltiptext="大于" id="bdy"/>
+                        <button  label=" &gt;=" tooltiptext="大于等于" id="bdydy"/>
+                        <button  label=" &lt;" tooltiptext="小于" id="bxy"/>
+                        <button  label=" &lt;=" tooltiptext="小于等于" id="bxydy"/>
+                        <button  label=" &lt;&gt;" tooltiptext="不等于" id="bbdy"/>
+                        <button  label="包含" tooltiptext="包含" id="bbh" />
+                    </toolbar>
+                </groupbox>
+                <groupbox closable="false" mold="3d" >
+                    <caption label="逻辑连接符" />
+                    <toolbar >
+                        <button    label="并且" id="band"/>
+                        <button    label="或者" id="bor"/>
+                        <button    label="非" id="bnot"/>
+                        <button    label="左括号" id="bzkh"/>
+                        <button    label="右括号" id="bykh"/>
+                    </toolbar>
+                </groupbox>
+                <groupbox closable="false" mold="3d" >
+                    <caption label="项目运算设置" />
+                    <checkbox label="子串" id="csubs"/>
+                    <combobox id="ctjgs" >
+                        <comboitem label="求原值" value="" id="ciorignal" />
+                        <comboitem label="求和值" value="" id="cisum" />
+                        <comboitem label="求平均值" value="" id="ciavg" />
+                        <comboitem label="求最大值" value="" id="cimax" />
+                        <comboitem label="求最小值" value="" id="cimin" />
+                        <comboitem label="求记录数" value="" id="cicount" />
+                    </combobox>
+                </groupbox>
+                <!--<hbox >-->
+                    <toolbar>
+                        <button label="回退"  id="bclear"/>
+                        <button label="重选" id="breset"/>
+                        <button label="确认" id="bok"/>
+                        <button label="取消" id="bcancel" />
+                    </toolbar>
+                <!--</hbox>-->
+            </vlayout>
+        </hlayout>
+        <separator />
+        <hbox id="hbinput">
+            <textbox width="165px" id="tcol" />
+            <separator />
+            <textbox width="70px" id="tysf" />
+            <separator />
+            <textbox width="170px" id="tvalue" tooltiptext="通过右键帮助数据"/>
+            <!--<datebox width="140px" id="tvalue"/>-->
+        </hbox>
+        <separator />
+        <vlayout  vflex="1" >
+            <groupbox closable="false" mold="3d">
+                <caption label="条件表达式"   />
+                <textbox  readonly="true" rows="7" cols="50" height="100%" width="100%" id="tftjsm" />
+            </groupbox>
+
+        </vlayout>
+
+    </window>
+
+</zk>

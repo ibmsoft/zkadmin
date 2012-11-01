@@ -1,0 +1,36 @@
+<plugin name='core' version='1.0' grailsVersion='1.3.7 &gt; *'>
+  <author>dellsoft</author>
+  <title>zk admin ui</title>
+  <description>\
+基于zk 的 UI 管理界面
+</description>
+  <documentation>http://grails.org/plugin/core</documentation>
+  <resources>
+    <resource>com.py110.basic.JobComposer</resource>
+    <resource>com.py110.basic.PyconfComposer</resource>
+    <resource>com.py110.menu.AdminComposer</resource>
+    <resource>com.py110.menu.LoginComposer</resource>
+    <resource>com.py110.menu.MacrosComposer</resource>
+    <resource>com.py110.menu.PymenuComposer</resource>
+    <resource>com.py110.pubs.help.GeneralHelpComposer</resource>
+    <resource>com.py110.user.PyuserComposer</resource>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>com.py110.basic.Pyconf</resource>
+    <resource>com.py110.basic.Pygnzd</resource>
+    <resource>com.py110.basic.Pygran</resource>
+    <resource>com.py110.basic.Pynbbm</resource>
+    <resource>com.py110.basic.Pystru30</resource>
+    <resource>com.py110.basic.Pyusgn</resource>
+    <resource>com.py110.menu.Pymenu</resource>
+    <resource>com.py110.user.Pyuser</resource>
+    <resource>com.py110.pubs.help.GeneralHelpService</resource>
+    <resource>com.py110.pubs.help.ListenceService</resource>
+    <resource>com.py110.pubs.help.LsconfService</resource>
+    <resource>com.py110.pubs.help.QxcheckService</resource>
+  </resources>
+  <dependencies />
+  <behavior />
+</plugin>

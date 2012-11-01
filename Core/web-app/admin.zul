@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?page zscriptLanguage="GroovyGrails"?>
+<?page title="系统管理" ?>
+<zk  xmlns="http://www.zkoss.org/2005/zul"
+     xmlns:h="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd" >
+    <borderlayout id="main"  apply="com.py110.menu.adminComposer" >
+        <west id= "westMenu" title="菜单"  flex="true" collapsible="true"  splittable="true" minsize="200" maxsize="360" width="200px" >
+            <div >
+                <panel vflex="1">
+                    <toolbar>
+                        <label value="查找:"/><textbox id="searchBox" ctrlKeys="#down#up" focus="true" sclass="demo-search-inp"/>
+                    </toolbar>
+                    <panelchildren  vflex="1">
+                        <tree id="treeMenu"   vflex="1"  zclass="z-dottree">
+                            <treechildren>
+                            </treechildren>
+                        </tree>
+                    </panelchildren>
+                </panel>
+            </div>
+
+        </west>
+        <center flex="true">
+            <tabbox id="maintab">
+                <toolbar id="logout" >
+                </toolbar>
+                <tabs align="end" >
+                </tabs>
+                <tabpanels>
+                </tabpanels>
+            </tabbox>
+
+        </center>
+        <south >
+            <hbox align="stretch"  spacing = "160px" width="100%" widths="60%,15%,15%,10%" >
+                <label  value= "系统信息" />
+                <label id="userName" />
+                <label id="loginDate" />
+                <label  value= "版本 1.0" />
+            </hbox>
+        </south>
+    </borderlayout>
+    <menupopup id="tabMenu"  />
+    <menupopup id="mainContext"  />
+</zk>

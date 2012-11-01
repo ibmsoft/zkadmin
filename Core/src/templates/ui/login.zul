@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit"?>-->
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<!--<?page zscriptLanguage="GroovyGrails"?>-->
+<?page title="XX系统"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd" >
+    <window   apply="com.py110.menu.loginComposer" id = "loginMain"  title="用户登录" closable="false" width="320px" position="center" border="normal" mode="modal">
+        <caption image="images/icons/application_form.png" />
+        <grid width="99%">
+            <rows>
+                <row id="data" >
+                    <label value="用户编号"  />
+                    <textbox id="name"  value="" constraint="no empty" />
+                </row>
+                <row>
+                    <label value="用户密码" />
+                    <textbox id="password" type="password"  value=""  />
+                </row>
+                <row>
+                    <label value="日期" />
+                    <datebox id="loginDate"  constraint="no empty" format="yyyy-MM-dd" onCreate="self.value = new Date()"  />
+                </row>
+            </rows>
+        </grid>
+        <toolbar mold="panel" align="center">
+            <toolbarbutton id="login" label="登录" image="images/icons/lock.png" />
+            <toolbarbutton id="sign" label="注册" image="images/icons/new.png" />
+        </toolbar>
+    </window>
+</zk>

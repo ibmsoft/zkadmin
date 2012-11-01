@@ -1,0 +1,14 @@
+1、基于 ZK 的 系统管理界面
+左边是树型菜单，右边是具体的功能列表
+
+new Pymenu(fbh: "1", name: "basic", sdesc: "菜单", icon: "", stype: "${MenuType.MNONE}", surl: "", sdomain: "", isort: 00, mx: 0, js: 0).save();
+new Pymenu(fbh: "001", name: "basic", sdesc: "字典对象", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "", sdomain: "", isort: 00, mx: 0, js: 1).save();
+new Pymenu(fbh: "001010", name: "cuwbzd", sdesc: "外币维护", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/cuwbzd.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001030", name: "cuholiday", sdesc: "节日维护", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/cuholiday.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001040", name: "cuconf", sdesc: "参数设置", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/cuconf.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001045", name: "cubase", sdesc: "月末处理", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/cumonth.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001050", name: "cuquery", sdesc: "汇率查询", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/cuquery.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001070", name: "basic", sdesc: "用户维护", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/auth/lspass.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "001080", name: "basic", sdesc: "定时任务", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/basic/job.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
+new Pymenu(fbh: "999", name: "basic", sdesc: "系统菜单维护", icon: "/images/icons/folder.png", stype: "${MenuType.MNONE}", sdomain: "", isort: 00, mx: 0, js: 1).save();
+new Pymenu(fbh: "999001", name: "basic", sdesc: "菜单", icon: "/images/icons/folder.png", stype: "${MenuType.MURL}", surl: "com/zysoft/menu/menulist.zul", sdomain: "", isort: 00, mx: 1, js: 2).save();
